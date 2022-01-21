@@ -1,5 +1,9 @@
 package cuentas;
-
+/**
+ * Método principal del programa
+ * @author Angel
+ *
+ */
 public class Main {
 
     public static void main(String[] args) {
@@ -9,7 +13,11 @@ public class Main {
         cuenta1 = new CCuenta("Antonio LÃ³pez","1000-2365-85-1230456789",2500,0);
         operativa_cuenta(cuenta1, 0);
     }
-
+    /**
+     * método que permite hacer una operación dentro del objeto CCuenta
+     * @param cuenta1
+     * @param cantidad
+     */
 	public static void operativa_cuenta(CCuenta cuenta1, float cantidad) {
 		double saldoActual;
 		saldoActual = cuenta1.estado();
